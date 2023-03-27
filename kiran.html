@@ -1,0 +1,791 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="kiran.css">
+    </head>
+    
+    <body>
+         <div>
+        <nav class="navbar navbar-expand-lg navbar-light navbg-color fixed-top">
+            <div class=container>
+                <h1 class="logo-text"> Food App</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" id="navtext-color" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" id="navtext-color2" href="#"> Cart</a>
+                        <a class="nav-link d-lg-none" id="navtext-color3" href="#"> Login</a>
+                        <a class="nav-link d-none d-md-none d-lg-inline" id="navtext-color4" href="#"> Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="https://wallpapercave.com/wp/wp9059520.jpg" class="bgmain-image" />
+                </div>
+
+                <div class="col-12">
+                    <hr class="line-width">
+                </div>
+            </div>
+            <h1 class="dinner-text"> Dinner Reservations!</h1>
+            <p class="dinner-para">We are now open for dinner service Thursday through Sunday! We’ll be accepting limited walk-ins and reservations on Yelp. </p>
+            <p class="dinner-para"> For brunch, we still do not take reservations as we seat guests on a first come first serve basis. However, you can join our Yelp! Waitlist to save your spot ahead of time (same day only)!</p>
+            <h1 class="dinner-text">Bussiness Hours!</h1>
+            <p class="dinner-para">BRUNCH: Thursday through Monday 9:00am - 2:30pm</p>
+            <p class="dinner-para"> DINNER: Thursday through Sunday 5:00pm - 9:00pm</p>
+            <p class="dinner-para"> CLOSED Tuesdays & Wednesdays </p>
+            <p class="dinner-para"> Dine-in, takeout, and delivery (via DoorDash) available</p>
+            <div class="d-flex flex-row justify-content-center">
+                <button class="order-onlinebutton"> RESERVE NOW</button>
+            </div>
+
+
+            <div class="container">
+                <p class="ffdh-para"> We Are Open Explore Our Menu</p>
+                <hr class="hr-line">
+
+            </div>
+            <div class="col-12 buttons-container d-flex flex-row justify-content-center d-none">
+                <div class="d-none d-md-inline">
+                    <button class="button-model" id="buttonBreakFast" onclick="BreakFast()"> BREAK FAST</button>
+                    <button class="button-model" id="buttonBrunch" onclick="Brunch()"> BRUNCH</button>
+                    <button class="button-model" id="buttonLunch" onclick="Lunch()"> MID DAY MENU</button>
+                    <button class="button-model" id="buttonDinner" onclick="Dinner()"> DINNER</button>
+                </div>
+                <div class="d-block d-md-none">
+                    <button class="button-model" id="buttonBreakFast" onclick="BreakFast()"> BREAK FAST</button>
+                    <button class="button-model" id="buttonBrunch" onclick="Brunch()"> BRUNCH</button>
+                    <button class="button-model mt-2" id="buttonLunch" onclick="Lunch()"> MID DAY MENU</button>
+                    <button class="button-model" id="buttonDinner" onclick="Dinner()"> DINNER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="orderBreakFast">
+        <div class="container pt-4">
+            <hr class="hr-line1">
+            <h1 class="menu-text "> BREAK FAST</h1>
+            <hr class="hr-line1">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Crabcake Florentine</h1>
+                        <p class="dosa-price"> $18.00</p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-7"> Panko crusted crab cakes, chopped spinach & artichoke.</p>
+                        <img src="https://static.spotapps.co/spots/8e/d2ba8d2d8c4e0da43baac2c602d2ef/medium" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> California Omelette </h1>
+                        <p class="dosa-price"> $16.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8"> Chopped applewood bacon, guacamole, tomato grated california cheeses.</p>
+                        <img src="https://images.pexels.com/photos/1278020/pexels-photo-1278020.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Indian Roti's </h1>
+                        <p class="dosa-price"> $20.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">The roti is an Indian food which is a flat unleavened bread that is used to eat the curry.</p>
+                        <img src="https://images.pexels.com/photos/6419703/pexels-photo-6419703.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Steak & Lobster Benedict</h1>
+                        <p class="dosa-price"> $22.00</p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Grilled skirt steak, butter poached lobster - Need We Say More?</p>
+                        <img src="https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Beach House Pancakes</h1>
+                        <p class="dosa-price"> $15.00</p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Hawaiian style, shaved coconut, mango fresh strawberries & sliced banana.</p>
+                        <img src="https://images.pexels.com/photos/718739/pexels-photo-718739.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Avocado Toast & Eggs</h1>
+                        <p class="dosa-price"> $16.00</p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Artisan ciabatta, avocado mash, micro mixed greens, chopped grape tomato & eggs your style.</p>
+                        <img src="https://images.pexels.com/photos/7936743/pexels-photo-7936743.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Oat Meal</h1>
+                        <p class="dosa-price"> $14.00</p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Peanut butter, fresh apricots, sliced banana, shaved coconut- honey drizzle.</p>
+                        <img src="https://images.pexels.com/photos/7937339/pexels-photo-7937339.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none ">
+                    <div class="menu-container2 shadow">
+                        <img src="https://static.spotapps.co/spots/8e/d2ba8d2d8c4e0da43baac2c602d2ef/medium" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6">Crabcake Florentine</h1>
+                        <p class="dosa-price1"> $18.00</p>
+                        <p class="dosa-para1 col-12"> Panko crusted crab cakes, chopped spinach & artichoke.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline  d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/1278020/pexels-photo-1278020.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6"> California Omelette </h1>
+                        <p class="dosa-price1"> $16.00</p>
+                        <p class="dosa-para1 col-12"> Chopped applewood bacon, guacamole, tomato - grated california cheeses.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/6419703/pexels-photo-6419703.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-8"> Indian Roti's </h1>
+                        <p class="dosa-price1"> $20.00</p>
+                        <p class="dosa-para1 col-12">The roti is an Indian food which is a flat unleavened bread that is used to eat with curry.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-7 col-md-7"> Steak & Lobster Benedict </h1>
+                        <p class="dosa-price1"> $22.00</p>
+                        <p class="dosa-para1 col-12">Grilled skirt steak, butter poached lobster - Need We Say More?</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline  d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/718739/pexels-photo-718739.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6 col-sm-8 col-md-7"> Beach House Pancakes </h1>
+                        <p class="dosa-price1"> $22.00</p>
+                        <p class="dosa-para1 col-12">Hawaiian style, shaved coconut, mango fresh strawberries & sliced banana.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/7936743/pexels-photo-7936743.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6">Avocado Toast Eggs</h1>
+                        <p class="dosa-price1"> $16.00</p>
+                        <p class="dosa-para1 col-12">Artisan ciabatta, avocado mash, micro mixed greens, chopped grape tomato & eggs your style.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/7937339/pexels-photo-7937339.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-8">Oat Meal</h1>
+                        <p class="dosa-price1"> $14.00</p>
+                        <p class="dosa-para1 col-12">Peanut butter, fresh apricots, sliced banana, shaved coconut- honey drizzle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="orderBrunch">
+
+        <div class="container pt-4">
+            <hr class="hr-line1">
+            <h1 class="menu-text "> SNACKS</h1>
+            <hr class="hr-line1">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Grilled Gulf Shrimp</h1>
+                        <p class="dosa-price"> $15.00</p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8"> Champagne mignonette & cocktail sauce.</p>
+                        <img src="https://images.pexels.com/photos/6270541/pexels-photo-6270541.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Avacado Toast </h1>
+                        <p class="dosa-price"> $15.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8"> Grilled levain, toasted garlic-chili, lemon & sea salt.</p>
+                        <img src="https://images.pexels.com/photos/1600711/pexels-photo-1600711.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Spl Fries</h1>
+                        <p class="dosa-price"> $8.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Seasalt & herbs.</p>
+                        <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none ">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/6270541/pexels-photo-6270541.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6 col-md-7">Grilled Gulf - Shrimp</h1>
+                        <p class="dosa-price1"> $15.00</p>
+                        <p class="dosa-para1 col-12"> Champagne mignonette & cocktail sauce.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline  d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/1600711/pexels-photo-1600711.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6"> Avacado Toast </h1>
+                        <p class="dosa-price1"> $15.00</p>
+                        <p class="dosa-para1 col-12"> Grilled levain, toasted garlic-chili, lemon & sea salt.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-8"> Spl Fries </h1>
+                        <p class="dosa-price1"> $8.00</p>
+                        <p class="dosa-para1 col-12">Seasalt & herbs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-4">
+            <hr class="hr-line1">
+            <h1 class="menu-text "> SAVORIES</h1>
+            <hr class="hr-line1">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Burger</h1>
+                        <p class="dosa-price"> $7.00</p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8"> Caramelized onions, cheddar, bacon & horseradish aïoli with fries.</p>
+                        <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Avacado Toast </h1>
+                        <p class="dosa-price"> $15.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8"> Grilled levain, toasted garlic-chili, lemon & sea salt.</p>
+                        <img src="https://images.pexels.com/photos/1600711/pexels-photo-1600711.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Smoked Salmon Tartine</h1>
+                        <p class="dosa-price"> $22.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Focaccia, horseradish cream, poached egg & hollandaise.</p>
+                        <img src="https://images.pexels.com/photos/8765340/pexels-photo-8765340.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none ">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-8">Burger</h1>
+                        <p class="dosa-price1"> $7.00</p>
+                        <p class="dosa-para1 col-12"> Caramelized onions, cheddar, bacon & horseradish aïoli with fries.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline  d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/1600711/pexels-photo-1600711.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6"> Avacado Toast </h1>
+                        <p class="dosa-price1"> $15.00</p>
+                        <p class="dosa-para1 col-12"> Grilled levain, toasted garlic-chili, lemon & sea salt.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/8765340/pexels-photo-8765340.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-8"> Smoked Salmon Tartine</h1>
+                        <p class="dosa-price1"> $22.00</p>
+                        <p class="dosa-para1 col-12">Focaccia, horseradish cream, poached egg & hollandaise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-4">
+            <hr class="hr-line1">
+            <h1 class="menu-text "> SWEETS</h1>
+            <hr class="hr-line1">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-8"> Buttermilk Pancakes</h1>
+                        <p class="dosa-price"> $17.00</p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8"> Smoked maple syrup, whipped butter & smoked salt.</p>
+                        <img src="https://images.pexels.com/photos/10311642/pexels-photo-10311642.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Doughnuts </h1>
+                        <p class="dosa-price"> $10.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8"> Mixed flavours.</p>
+                        <img src="https://images.pexels.com/photos/4686960/pexels-photo-4686960.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none ">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/10311642/pexels-photo-10311642.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6 col-md-7">Buttermilk Pancakes</h1>
+                        <p class="dosa-price1"> $17.00</p>
+                        <p class="dosa-para1 col-12"> Smoked maple syrup, whipped butter & smoked salt.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline  d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/4686960/pexels-photo-4686960.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6"> Doughnuts </h1>
+                        <p class="dosa-price1"> $10.00</p>
+                        <p class="dosa-para1 col-12"> Mixed flavours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="orderLunch">
+
+        <div class="container pt-4">
+            <hr class="hr-line1">
+            <h1 class="menu-text "> MID DAY MENU</h1>
+            <hr class="hr-line1">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Crispy Brussels Sprouts Chips</h1>
+                        <p class="dosa-price"> $12.00</p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8"> Lemon & Seasalt.</p>
+                        <img src="https://www.sunset.com/wp-content/uploads/4_3_horizontal_inbody_900x506/Crispy-Brussels-Sprouts-with-Prosciutto-Chips-pr-0919.jpg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Beer Battered Green Beans </h1>
+                        <p class="dosa-price"> $15.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8"> Spicy French onion dip.</p>
+                        <img src="https://kitchenfunwithmy3sons.com/wp-content/uploads/2020/07/Beer-Battered-Fried-Green-Beans-25-680x453.jpg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12">Warm Deviled Egg</h1>
+                        <p class="dosa-price"> $4.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Aged provolone, pickled jalapeño & bacon.</p>
+                        <img src="https://spicecravings.com/wp-content/uploads/2022/04/spiced-deviled-eggs-LS-21.jpg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12">Arugula & Endive Caesar</h1>
+                        <p class="dosa-price"> $10.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Spanish anchovies, crispy capers & parmesan.</p>
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/006/152/609/small_2x/white-forks-on-a-lettuce-salad-endive-arugula-with-cheese-chicken-and-croutons-healthy-food-concept-photo.jpg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12">Tuna Salad</h1>
+                        <p class="dosa-price"> $14.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Cooked tuna with fresh vegies, lemon and salt.</p>
+                        <img src="https://img.taste.com.au/ChmIAzAE/w1200-h630-cfill/taste/2016/11/mediterranean-tuna-salad-31059-1.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none ">
+                    <div class="menu-container2 shadow">
+                        <img src="https://www.sunset.com/wp-content/uploads/4_3_horizontal_inbody_900x506/Crispy-Brussels-Sprouts-with-Prosciutto-Chips-pr-0919.jpg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-8 col-md-7">Crispy Brussels Sprouts Chips</h1>
+                        <p class="dosa-price1"> $12.00</p>
+                        <p class="dosa-para1 col-12"> Lemon & Seasalt.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline  d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://kitchenfunwithmy3sons.com/wp-content/uploads/2020/07/Beer-Battered-Fried-Green-Beans-25-680x453.jpg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-7 col-md-7">Beer Battered - Green Beans</h1>
+                        <p class="dosa-price1"> $15.00</p>
+                        <p class="dosa-para1 col-12"> Spicy French onion.<dip> </dip>.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://spicecravings.com/wp-content/uploads/2022/04/spiced-deviled-eggs-LS-21.jpg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6 col-md-6"> Warm Deviled Egg </h1>
+                        <p class="dosa-price1"> $4.00</p>
+                        <p class="dosa-para1 col-12">Aged provolone, pickled jalapeño & bacon.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/006/152/609/small_2x/white-forks-on-a-lettuce-salad-endive-arugula-with-cheese-chicken-and-croutons-healthy-food-concept-photo.jpg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6 col-md-6"> Arugula & Endiv- e Caesar </h1>
+                        <p class="dosa-price1"> $10.00</p>
+                        <p class="dosa-para1 col-12">Spanish anchovies, crispy capers & parmesan.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://img.taste.com.au/ChmIAzAE/w1200-h630-cfill/taste/2016/11/mediterranean-tuna-salad-31059-1.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-8"> Tuna Salad </h1>
+                        <p class="dosa-price1"> $14.00</p>
+                        <p class="dosa-para1 col-12">Cooked tuna with fresh vegies, lemon & salt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="orderDinner">
+
+        <div class="container pt-4">
+            <hr class="hr-line1">
+            <h1 class="menu-text"> BITES </h1>
+            <hr class="hr-line1">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Crispy Brussels Sprouts Chips</h1>
+                        <p class="dosa-price"> $12.00</p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Lemon & Seasalt.</p>
+                        <img src="https://www.sunset.com/wp-content/uploads/4_3_horizontal_inbody_900x506/Crispy-Brussels-Sprouts-with-Prosciutto-Chips-pr-0919.jpg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Warm Deviled Egg </h1>
+                        <p class="dosa-price"> $4.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-7"> Aged provolone, pickled jalapeño & bacon.</p>
+                        <img src="https://spicecravings.com/wp-content/uploads/2022/04/spiced-deviled-eggs-LS-21.jpg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Spl Fries</h1>
+                        <p class="dosa-price"> $8.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Seasalt & herbs.</p>
+                        <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" class="dosa-image" />
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none ">
+                    <div class="menu-container2 shadow">
+                        <img src="https://www.sunset.com/wp-content/uploads/4_3_horizontal_inbody_900x506/Crispy-Brussels-Sprouts-with-Prosciutto-Chips-pr-0919.jpg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6">Grilled Gulf Shrimp</h1>
+                        <p class="dosa-price1"> $12.00</p>
+                        <p class="dosa-para1 col-12"> Lemon & Seasalt.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline  d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://spicecravings.com/wp-content/uploads/2022/04/spiced-deviled-eggs-LS-21.jpg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6 col-sm-7 col-md-6"> Warm Deviled Egg </h1>
+                        <p class="dosa-price1"> $4.00</p>
+                        <p class="dosa-para1 col-12"> Grilled levain, toasted garlic-chili, lemon & sea salt.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-8"> Spl Fries </h1>
+                        <p class="dosa-price1"> $8.00</p>
+                        <p class="dosa-para1 col-12">Seasalt & herbs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-4">
+            <hr class="hr-line1">
+            <h1 class="menu-text "> STARTERS </h1>
+            <hr class="hr-line1">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12">Arugula & Endive Caesar</h1>
+                        <p class="dosa-price"> $18.00</p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8"> Anchovies, crispy capers & parmesan.</p>
+                        <img src="https://static.onecms.io/wp-content/uploads/sites/19/2013/08/27/arugula-salad-caesar-vinaigrette-ck-x.jpg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Pan Seared Scallops</h1>
+                        <p class="dosa-price"> $21.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8"> Satsuma mandarin, kohlrabi salad & citrus buerre blanc.</p>
+                        <img src="https://www.wholesomeyum.com/wp-content/uploads/2021/08/wholesomeyum-Pan-Seared-Scallops-Recipe-With-Garlic-Butter-14.jpg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Sunchoke Latkes</h1>
+                        <p class="dosa-price"> $24.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Cured salmon & smoked crème fraîche.</p>
+                        <img src="https://www.all-clad.com/media/blog/cache/950x600/magefan_blog/latkes_featured_image.jpg" class="dosa-image" />
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://static.onecms.io/wp-content/uploads/sites/19/2013/08/27/arugula-salad-caesar-vinaigrette-ck-x.jpg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6 col-md-6">Arugula & Endive Caesar</h1>
+                        <p class="dosa-price1"> $18.00</p>
+                        <p class="dosa-para1 col-12">anchovies, crispy capers & parmesan.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline  d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://www.wholesomeyum.com/wp-content/uploads/2021/08/wholesomeyum-Pan-Seared-Scallops-Recipe-With-Garlic-Butter-14.jpg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6"> Pan Seared Scallops</h1>
+                        <p class="dosa-price1"> $21.00</p>
+                        <p class="dosa-para1 col-12">Satsuma mandarin, kohlrabi salad & citrus buerre blanc.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://www.all-clad.com/media/blog/cache/950x600/magefan_blog/latkes_featured_image.jpg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-5 col-md-6">Sunchoke Latkes</h1>
+                        <p class="dosa-price1"> $24.00</p>
+                        <p class="dosa-para1 col-12">Cured salmon & smoked crème fraîche.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-4">
+            <hr class="hr-line1">
+            <h1 class="menu-text "> MAINS</h1>
+            <hr class="hr-line1">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Petrale Sole Meunière</h1>
+                        <p class="dosa-price"> $36.00</p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Snow crab, celery root & fennel salad, brown butter, caper & lemon.</p>
+                        <img src="https://ayearatthetable.com/wp-content/uploads/2011/03/IMG_3522-1024x768.jpg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Grilled Pork Chop </h1>
+                        <p class="dosa-price"> $40.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Pork cheek cabbage rolls, pickled fresno peppers & sauce béarnaise.</p>
+                        <img src="https://kristineskitchenblog.com/wp-content/uploads/2022/05/best-grilled-pork-chops-14.jpg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Ribeye Steak Frites </h1>
+                        <p class="dosa-price"> $46.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">French fries, herb butter & red wine jus.</p>
+                        <img src="https://www.charlottefashionplate.com/wp-content/uploads/2019/08/D2023DC7-BFA1-4D8F-9784-FB15500B5F06-1-e1565712766910.jpg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12">Beef & Mushrooms</h1>
+                        <p class="dosa-price"> $44.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-7">Cooked with smashed potatoes and cream, butter, salt, pepper & spices.</p>
+                        <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Beef-and-Mushrooms-with-Smashed-Potatoes_EXPS_SDON17_191910_D06_30_2b-4.jpg?fit=700,1024" class="dosa-image" />
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none ">
+                    <div class="menu-container2 shadow">
+                        <img src="https://ayearatthetable.com/wp-content/uploads/2011/03/IMG_3522-1024x768.jpg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6 col-md-6">Petrale Sole Meunière</h1>
+                        <p class="dosa-price1"> $36.00</p>
+                        <p class="dosa-para1 col-12"> Snow crab, celery root & fennel salad, brown butter, caper & lemon.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline  d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://kristineskitchenblog.com/wp-content/uploads/2022/05/best-grilled-pork-chops-14.jpg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6"> Grilled Pork Chop </h1>
+                        <p class="dosa-price1"> $40.00</p>
+                        <p class="dosa-para1 col-12"> Pork cheek cabbage rolls, pickled fresno peppers & sauce béarnaise.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline  d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://www.charlottefashionplate.com/wp-content/uploads/2019/08/D2023DC7-BFA1-4D8F-9784-FB15500B5F06-1-e1565712766910.jpg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6"> Ribeye Steak Frites </h1>
+                        <p class="dosa-price1"> $46.00</p>
+                        <p class="dosa-para1 col-12">French fries, herb butter & red wine jus.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline  d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Beef-and-Mushrooms-with-Smashed-Potatoes_EXPS_SDON17_191910_D06_30_2b-4.jpg?fit=700,1024" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6 col-sm-6">Beef & Mushrooms </h1>
+                        <p class="dosa-price1"> $44.00</p>
+                        <p class="dosa-para1 col-12">Cooked with smashed potatoes and cream, butter, salt, pepper & spices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-4">
+            <hr class="hr-line1">
+            <h1 class="menu-text "> SIDES</h1>
+            <hr class="hr-line1">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Sauteed Spinach</h1>
+                        <p class="dosa-price"> $12.00</p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Misco butter & lemon.</p>
+                        <img src="https://www.sipandfeast.com/wp-content/uploads/2021/09/sauteed-spinach-garlic-recipe-snippet.jpg" class="dosa-image" />
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-9 col-lg-6 col-xl-6 d-none d-sm-none d-lg-inline">
+                    <div class="menu-container shadow">
+                        <h1 class="dosa-text col-12"> Potatoe Pureé </h1>
+                        <p class="dosa-price"> $12.00 </p>
+                        <p class="dosa-para col-8 col-lg-8 col-xl-8">Sweet cream butter & chives.</p>
+                        <img src="https://kristineskitchenblog.com/wp-content/uploads/2022/05/best-grilled-pork-chops-14.jpg" class="dosa-image" />
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline d-lg-none ">
+                    <div class="menu-container2 shadow">
+                        <img src="https://www.sipandfeast.com/wp-content/uploads/2021/09/sauteed-spinach-garlic-recipe-snippet.jpg" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-5 col-md-5"> Sauteed Spinach</h1>
+                        <p class="dosa-price1"> $12.00</p>
+                        <p class="dosa-para1 col-12">Misco butter & lemon.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-4 d-inline d-sm-inline  d-lg-none">
+                    <div class="menu-container2 shadow">
+                        <img src="https://static.toiimg.com/photo/72209378.cms" class="dosa-image1" />
+                        <h1 class="dosa-text1 col-6"> Potatoe Pureé</h1>
+                        <p class="dosa-price1"> $12.00</p>
+                        <p class="dosa-para1 col-12"> Sweet cream butter & chives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="app-container mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <h1 class="app-text1 mt-3"> Get the <span class="food-apptext"> Food App</span></h1>
+                    <p class="app-text2"> We will send you a link, open it on your phone to download the app </p>
+                    <nav class="navbar navbar-light d-inline d-sm-none d-md-none d-lg-none d-xl-none">
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="https://www.FoodApp.com" aria-label="Search">
+                            <button class="btn btn-danger my-2 my-sm-0 app-navbar1" type="submit">Share App Link</button>
+                        </form>
+                    </nav>
+                    <nav class="navbar navbar-light d-none d-sm-none d-md-none d-lg-inline d-xl-inline">
+                        <form class="form-inline d-flex flex-row justify-content-center">
+                            <input class="form-control mr-sm-2" type="search" placeholder="https://www.FoodApp.com" aria-label="Search">
+                            <button class="btn btn-danger my-2 my-sm-0" type="submit">Share App Link</button>
+                        </form>
+                    </nav>
+                    <nav class="navbar navbar-light d-none d-sm-inline d-md-inline d-lg-none d-xl-none">
+                        <form class="form-inline d-flex flex-row justify-content-center">
+                            <input class="form-control mr-sm-2" type="search" placeholder="https://www.FoodApp.com" aria-label="Search">
+                            <button class="btn btn-danger my-2 my-sm-0" type="submit">Share App Link</button>
+                        </form>
+                    </nav>
+
+                    <div class="playstore-icon d-block d-sm-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                            <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                        </svg>
+                    </div>
+                    <p class="app-para1 d-flex flex-row justify-content-center d-block d-sm-none d-md-none d-lg-none d-xl-none"> Download app from</p>
+
+                    <div class="playstore-icon2 d-none d-sm-inline d-md-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                            <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                        </svg>
+                    </div>
+                    <div class="playstore-icon3 d-none d-sm-none d-md-inline d-lg-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                            <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                        </svg>
+                    </div>
+                    <div class="playstore-icon4 d-none d-sm-none d-lg-inline d-xl-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                            <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                        </svg>
+                    </div>
+                    <div class="playstore-icon5 d-none d-sm-none d-lg-none d-xl-inline">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-google-play" viewBox="0 0 16 16">
+                            <path d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96 2.694-1.586Zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055l7.294-4.295ZM1 13.396V2.603L6.846 8 1 13.396ZM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27Z" />
+                        </svg>
+                    </div>
+                    <div class="para-padding d-flex flex-row justify-content-center pr-4">
+                        <p class="app-para2 d-none d-sm-inline d-md-none d-lg-none d-xl-none"> Download app from</p>
+                        <p class="app-para3 d-none d-sm-none d-md-none d-lg-inline d-xl-none"> Download app from</p>
+                        <p class="app-para5 d-none d-sm-none d-md-none d-lg-none d-xl-inline"> Download app from</p>
+                        <p class="app-para4 d-none d-sm-none d-md-inline d-lg-none d-xl-none"> Download app from</p>
+                    </div>
+                    <div class="mb-3 mt-1 d-flex flex-row justify-content-center">
+                        <button class="get-button btn btn-danger d-block d-sm-none d-md-none d-lg-none d-xl-none button-align1 mb-2" type="submit"> Get Now </button>
+                        <button class="get-button btn btn-danger d-none d-sm-inline d-md-none d-lg-none d-xl-none button-align2" type="submit"> Get Now </button>
+                        <button class="get-button btn btn-danger d-none d-sm-none d-md-inline d-lg-none d-xl-none button-align3" type="submit"> Get Now </button>
+                        <button class="get-button btn btn-danger d-none d-sm-none d-md-none d-lg-inline d-xl-none button-align4" type="submit"> Get Now </button>
+                        <button class="get-button btn btn-danger d-none d-sm-none d-md-none d-lg-none d-xl-inline button-align5" type="submit"> Get Now </button>
+                    </div>
+                    <h1 class="follow-text d-flex flex-row justify-content-center"> Follow Us On</h1>
+                    <div class="icons-align mb-2 d-flex flex-row justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram text-white" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook text-white ml-3" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter text-white ml-3" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="kiran.js"></script>
+    </body>
+</html>
